@@ -41,6 +41,7 @@ export const login = catchAsyncErrors(async (req, res, next) => {
     );
   }
   sendToken(user, 201, res, "User Logged In!");
+<<<<<<< Updated upstream
 });
 
 export const logout = catchAsyncErrors(async (req, res, next) => {
@@ -54,4 +55,6 @@ export const logout = catchAsyncErrors(async (req, res, next) => {
       success: true,
       message: "Logged Out Successfully.",
     });
+=======
+>>>>>>> Stashed changes
 });
