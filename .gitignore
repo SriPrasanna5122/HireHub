@@ -24,3 +24,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+backend/controllers/userController.js
+backend/models/userSchema.js
+backend/routes/jobRoutes.js
