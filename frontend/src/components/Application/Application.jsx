@@ -7,5 +7,5 @@ const Application = () => {
       </div>
     );
 }
-aaaa
-export default Applicationss;
+
+export default Application;
