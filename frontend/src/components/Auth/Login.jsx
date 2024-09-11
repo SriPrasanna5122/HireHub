@@ -5,6 +5,7 @@ import { Link, Navigate } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import axios from "axios";
 import toast from "react-hot-toast";
+import "../../App.css";
 import { Context } from "../../main";
 
 const Login = () => {
@@ -46,7 +47,8 @@ const Login = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="/JobZeelogo.png" alt="logo" />
+            <img src="/hirehub logo1.png" alt="logo" class="mainlogo"/>
+            <h6>HireHub</h6>
             <h3>Login to your account</h3>
           </div>
           <form>

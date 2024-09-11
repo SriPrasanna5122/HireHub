@@ -3,6 +3,7 @@ import { Context } from "../../main";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import "../../App.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -27,10 +28,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
+    <nav className={isAuthorized ? "navbarShow" : "navbarHide"} style={{backgroundColor:"grey"}}>
       <div className="container">
         <div className="logo">
-          <img src="/JobZee-logos__white.png" alt="logo" />
+          <img src="/hirehub logo1.png" alt="logo" class="mainlogo-navbar"/>
+          <h6>HireHub</h6>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
