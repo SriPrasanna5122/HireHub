@@ -34,7 +34,8 @@ const Jobs = () => {
               return (
                 <div className="card" key={element._id}>
                   <p>{element.title}</p>
-                  <p>{element.category}</p>
+                  <p>{element.company}</p>
+                  <p style={{color:"skyblue"}}>{element.category}</p>
                   <p>{element.country}</p>
                   <Link to={`/job/${element._id}`}>Job Details</Link>
                 </div>

@@ -53,7 +53,8 @@ const Register = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="/JobZeelogo.png" alt="logo" />
+          <img src="/hirehub logo1.png" alt="logo" class="mainlogo"/>
+          <h6>HireHub</h6>
             <h3>Create a new account</h3>
           </div>
           <form>

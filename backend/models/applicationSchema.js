@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import validator from "validator";
+import { Job } from "./jobSchema.js";
 
 const applicationSchema = new mongoose.Schema({
   name: {
@@ -58,6 +59,11 @@ const applicationSchema = new mongoose.Schema({
       enum: ["Employer"],
       required: true,
     },
+  },
+  job: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Job", // Reference to the Job schema
+    required: true,
   },
 });
 

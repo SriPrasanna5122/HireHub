@@ -14,6 +14,7 @@ const PostJob = () => {
   const [salaryTo, setSalaryTo] = useState("");
   const [fixedSalary, setFixedSalary] = useState("");
   const [salaryType, setSalaryType] = useState("default");
+  const [company, setCompany] = useState("");
 
   const { isAuthorized, user } = useContext(Context);
 
@@ -41,6 +42,7 @@ const PostJob = () => {
               city,
               location,
               fixedSalary,
+              company,
             }
           : {
               title,
@@ -51,6 +53,7 @@ const PostJob = () => {
               location,
               salaryFrom,
               salaryTo,
+              company,
             },
         {
           withCredentials: true,
@@ -70,6 +73,7 @@ const PostJob = () => {
         setSalaryFrom("");
         setSalaryTo("");
         setFixedSalary("");
+        setCompany("");
       })
       .catch((err) => {
         toast.error(err.response.data.message);
@@ -142,6 +146,12 @@ const PostJob = () => {
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               placeholder="Location"
+            />
+            <input
+              type="text"
+              value={company} // Add company input field
+              onChange={(e) => setCompany(e.target.value)}
+              placeholder="Company Name"
             />
             <div className="salary_wrapper">
               <select
